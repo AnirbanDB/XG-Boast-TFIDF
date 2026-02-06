@@ -1,0 +1,25 @@
+# .dockerignore
+# This file prevents specified files and directories from being copied into the Docker image.
+# This helps keep the image small and secure.
+
+# Ignore the virtual environment if it exists locally
+venv/
+__pycache__/
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore Docker files themselves
+Dockerfile
+docker-compose.yml
+
+# Ignore environment files to prevent leaking secrets
+.env
+.env.example
+
+# Ignore local user settings and OS files
+.DS_Store
+*.pyc
+*.log
+*.swp 

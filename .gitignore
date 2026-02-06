@@ -1,0 +1,124 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Environment Variables (CRITICAL - Contains Secrets)
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Model Files (Large Binary Files)
+*.pkl
+*.h5
+*.joblib
+*.model
+*.bin
+
+# Logs
+*.log
+logs/
+api.log
+
+# Data Files (May contain sensitive information)
+*.csv
+*.xlsx
+*.xls
+*.json
+!*_results.json
+!requirements.json
+!package.json
+
+# Uploads and Outputs
+uploads/*
+!uploads/.gitkeep
+predictions/*
+!predictions/.gitkeep
+saved_models/*
+!saved_models/.gitkeep
+archive/*
+!archive/.gitkeep
+splits/*
+!splits/.gitkeep
+
+# MongoDB
+*.db
+
+# AWS Credentials
+.aws/
+credentials
+
+# Docker
+*.tar
+*.tar.gz
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Database
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Security
+*.pem
+*.key
+*.crt
+*.cert
+secrets.txt
+credentials.json
