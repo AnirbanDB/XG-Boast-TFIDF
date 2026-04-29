@@ -46,7 +46,6 @@ env/
 .ipynb_checkpoints
 
 # Model Files (Large Binary Files)
-*.pkl
 *.h5
 *.joblib
 *.model
@@ -71,8 +70,8 @@ uploads/*
 !uploads/.gitkeep
 predictions/*
 !predictions/.gitkeep
-saved_models/*
-!saved_models/.gitkeep
+# saved_models/*
+# !saved_models/.gitkeep
 archive/*
 !archive/.gitkeep
 splits/*
