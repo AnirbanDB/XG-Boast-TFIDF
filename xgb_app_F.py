@@ -892,13 +892,16 @@ async def global_exception_handler(request, exc):
     )
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", API_CONFIG.get('port', 8000)))
+    host = "0.0.0.0"
+
     print("Starting Firco XGBoost API...")
-    print(f"API will be available at: http://{API_CONFIG['host']}:{API_CONFIG['port']}")
-    print(f"Documentation at: http://{API_CONFIG['host']}:{API_CONFIG['port']}/docs")
+    print(f"API will be available at: http://{host}:{port}")
+    print(f"Documentation at: http://{host}:{port}/docs")
     
     uvicorn.run(
-        app,
-        host=API_CONFIG['host'],
-        port=API_CONFIG['port'],
+        "xgb_app_F:app",
+        host=host,
+        port=port,
         log_level="info"
     )

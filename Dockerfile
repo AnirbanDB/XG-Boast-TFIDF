@@ -49,4 +49,4 @@ EXPOSE 3004
 # The command to run the application when the container starts.
 # We use uvicorn to run the FastAPI app, as specified in xgb_app_F.py.
 # We bind to 0.0.0.0 to make it accessible from outside the container.
-CMD ["uvicorn", "xgb_app_F:app", "--host", "0.0.0.0", "--port", "3004"] 
+CMD ["uvicorn", "xgb_app_F:app", "--host", "0.0.0.0", "--port", "${PORT:-3004}"]
